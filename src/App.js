@@ -1,10 +1,14 @@
+import { Fragment } from 'react';
+import Footer from './structure/Footer';
+import Header from './structure/Header';
 import './assets/styles/ice-cream.scss'
 
 function App() {
   return (
-    <header>
-      <h1>Welcome</h1>
-    </header>
+    <Fragment>
+      <Header />
+      <Footer />
+    </Fragment>
   );
 }
 
