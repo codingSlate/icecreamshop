@@ -1,6 +1,6 @@
 import {useState,useEffect} from 'react'
 import {getMenu} from '../data/iceCreamData'
-import Hemlet, { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet'
 
 const Menu = () =>{
     const [menu, setMenu] =useState([])
