@@ -41,6 +41,14 @@ let menuData = [
         price: 2.6,
         description: "some description"
     },
+    {
+        id: 4,
+        iceCream: { id: 1, name: "ice4" },
+        inStock: true,
+        quantity: 22,
+        price: 2.6,
+        description: "some description"
+    },
 ]
 
 const getAvailableStock = () =>
