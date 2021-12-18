@@ -15,7 +15,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #ffd3ef;
-  h1, h2, h3, h4, h5, h6{
+  h1, h2{
+    text-align: center;
+    margin: 8px 0;
+  }
+h3, h4, h5, h6{
     margin: 5px 0;
   }
   p{
@@ -29,4 +33,5 @@ body {
     justify-content: center;
     align-items: center;
   }
+  
 }
