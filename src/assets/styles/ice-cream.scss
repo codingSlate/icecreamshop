@@ -14,7 +14,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(241, 217, 229);
+  background-color: #ffd3ef;
+  h1, h2, h3, h4, h5, h6{
+    margin: 5px 0;
+  }
+  p{
+    margin: 0;
+  }
 
   header,
   footer {

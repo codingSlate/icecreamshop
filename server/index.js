@@ -19,7 +19,7 @@ const iceCreams = [
 let menuData = [
     {
         id: 1,
-        iceCream: { id: 1, name: "ice1" },
+        iceCream: { id: 5, name: "ice1" },
         inStock: true,
         quantity: 20,
         price: 1.52,
@@ -27,7 +27,7 @@ let menuData = [
     },
     {
         id: 2,
-        iceCream: { id: 1, name: "ice3" },
+        iceCream: { id: 10, name: "ice2" },
         inStock: false,
         quantity: 30,
         price: 2.0,
@@ -35,7 +35,7 @@ let menuData = [
     },
     {
         id: 3,
-        iceCream: { id: 1, name: "ice3" },
+        iceCream: { id: 3, name: "ice3" },
         inStock: true,
         quantity: 22,
         price: 2.6,
@@ -43,7 +43,7 @@ let menuData = [
     },
     {
         id: 4,
-        iceCream: { id: 1, name: "ice4" },
+        iceCream: { id: 8, name: "ice4" },
         inStock: true,
         quantity: 22,
         price: 2.6,
@@ -73,7 +73,12 @@ app.get('/api/menu/stock-ice-creams/:id', (req, res) => {
 
 
 app.get('/api/menu', (req, res) => {
-    res.send(menuData)
+    // res.send(menuData)
+
+    // artificial slowdown to test to use loading image 
+    setTimeout(() => {
+        res.send(menuData)
+    }, 3000)
 })
 
 app.post('/api/menu', (req, res) => {
